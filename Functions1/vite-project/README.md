@@ -1,11 +1,14 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+State management: Managing the data within the application
 
-Currently, two official plugins are available:
+State maanagement is of two types:
+1.Local state management:
+Using use state alone only local state management is possible
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2.Global state management:
+golbal state management refers to managing the data throughout the application irrespective of the size of the application
+
+Metaphor: ex:-Books library
 
 
 why we need to prefer the functional components over the class components
@@ -69,6 +72,6 @@ useState(intialState)
 
   destructuring the array
 
- final state--> const[currentState,updaterFunction]=useState(initialState)
+ final state--> const [currentState,updaterFunction]=useState(initialState)
  const rrepresents the immutability,we cannot change the state
  current-->currentState
