@@ -2,7 +2,7 @@
 
 
 import { LockClosedIcon } from '@heroicons/react/solid'
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 
 export default function Forms() {
@@ -10,6 +10,10 @@ export default function Forms() {
     const emailRef= useRef();
     const passwordRef=useRef();
     const rememberRef=useRef()
+
+
+    
+
 
     const handleSubmit=(event)=>{
         event.preventDefault();
@@ -136,6 +140,7 @@ export default function Forms() {
           </form>
         </div>
       </div>
+     
     
   )
 }
