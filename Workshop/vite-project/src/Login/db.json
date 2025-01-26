@@ -1,0 +1,16 @@
+{
+    "users": [
+      { "id": 1, "name": "Jane Doe", "password":"jon456","isadmin":false},
+      { "id": 2, "name": "Jake paul","password":"jake135","isadmin":false}
+    ],
+    "admins":[
+        
+      { "id": 1, "name": "Vinay","password":"vinay123","isadmin":true},
+      { "id": 2, "name": "Vishnu", "password":"vinay123","isadmin":true },
+      { "id": 3, "name": "Jake paul","password":"jake135","isadmin":true}
+
+        
+    ]
+    
+
+  }
