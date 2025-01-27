@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 export const UseEffect = () => {
     // console.log(useEffect(()=>{},[]))
-
+    const [count,setCount]=useState(0)
     const [apidata,setApidata]=useState([])
 
     const api= ()=>{
@@ -23,13 +23,20 @@ export const UseEffect = () => {
     //     api()
     // },[])
     // console.log(apidata)
-    
-  
 
- 
+useEffect(()=>{
+   api()
+   console.log(apidata)
+},[count])
 
   return (
-    <h4>This is useEffect</h4>
+<>
+<h4>This is useEffect</h4>
+<h3>Count is:{count}</h3>
+<button onClick={()=>setCount((count)=> count+1)}>Increment:{count}</button>
+</>
+
+
   )
 
 }

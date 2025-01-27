@@ -71,3 +71,7 @@ useEffect(()=>{
 
 we need to use the dependency array -to ovecome the infinite loops
 deps-what is does actually, it will only call this(create-side effects) operation only once
+
+
+
+we pass the state or function or a event in the dependency, iut that event or function triggers then the in side the side effect will be performed.
