@@ -33,3 +33,14 @@ There are two ways for navigation in react router-dom
 1.Using Link component
 2.Using useNavigate Hook in react-router-dom
 
+
+Navigate(-1)-- it is for thee back option
+
+<!-- <Button onclick={}> -->
+
+
+
+
+we can pass the data on the URL and we can get it and display in our UI
+   ex:-  <Route path="/Contact/:Username?"  Component={Contact}></Route>
+ 

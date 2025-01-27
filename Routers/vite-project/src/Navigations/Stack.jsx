@@ -5,10 +5,13 @@ import Aboutscreen from '../Screens/Aboutscreen'
 import Contactscreen from '../Screens/Contactscreen'
 import { Settingscreen } from '../Screens/Settingscreen'
 import { Invalidscreen } from '../Screens/Invalidscreen'
+import { SearchTool } from '../Screenspractice/SearchTool'
 
 export const Stack = () => {
   return (
- <BrowserRouter>
+<>
+<BrowserRouter>
+ 
  <Routes>
     <Route path='/' Component={Homescreen}/>
     <Route path='/About' Component={Aboutscreen}/>
@@ -18,6 +21,7 @@ export const Stack = () => {
 
  </Routes>
  </BrowserRouter>
+</>
 
   )
 }

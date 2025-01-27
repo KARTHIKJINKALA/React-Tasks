@@ -44,8 +44,10 @@ const styles = {
       <ul style={styles.navLinks}>
         <li><Link to={"/"}>Home</Link></li>
         <li><Link to={"/About"}>About</Link></li>
+        <li><Link to={"/User"}>User</Link></li>
+
+        <li><Link to={"/Services"}>Services</Link></li>
         <li><Link to={"/Contact"}>Contact</Link></li>
-        <li><Link to={"/Settings"}>Settings</Link></li>
 
        
       </ul>

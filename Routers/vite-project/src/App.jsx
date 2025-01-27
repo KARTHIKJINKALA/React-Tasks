@@ -3,7 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 // import './App.css'
 
-import { Stack } from './Navigations/Stack'
+
+import { Stack1 } from './Navigations/Stack1'
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <>
 
-    <Stack/>
+    <Stack1/>
     
     </>
   )
