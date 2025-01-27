@@ -1,7 +1,7 @@
 
 useEffect:-
 
-useEffect is the hook in the react functional components ,It csuuses the side effects in the the components
+useEffect is the hook in the react functional components ,It causes the side effects in the the components
 
 side effects:-Data fecthing,Dom manipulation,Timers,Event listeners
 
@@ -48,3 +48,26 @@ useEffect(()=>{
 },[])
 
 
+when we are doing the side effects and appending the data to the useState it will cause the infinite times of calling
+
+ex:-
+
+    const [apidata,setApidata]=useState()
+
+    const api= async()=>{
+        var out=await fetch("https://fakestoreapi.com/products/")
+        var disp=await out.json()
+        setApidata(disp)
+    }
+    api()
+    // console.log(apidata) // Infinite times data is called
+
+
+//we can write the multiple useEffects in the same component
+
+useEffect(()=>{
+
+},[dependency array])
+
+we need to use the dependency array -to ovecome the infinite loops
+deps-what is does actually, it will only call this(create-side effects) operation only once
