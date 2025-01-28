@@ -3,7 +3,7 @@ import React, { useMemo, useState } from 'react'
 export const Example = () => {
 
     const [count,setCount]=useState(0)
-    const[number,setNumber]=useState(3)
+    const[number,setNumber]=useState(2)
 
 
     let factorial = (num) => {
@@ -18,17 +18,17 @@ export const Example = () => {
     };
     
     const out=useMemo(()=>{
-        factorial(number)
+      return  factorial(number)
     },[number])
+   
     
 
   return (
     <>
+    <h2>{out}</h2>
      <h3>{count}</h3>
     <button onClick={()=>setCount((count)=> count+1)}>Increment Count</button>
-
-     
-     <h4>{out}</h4>
+    
 
     </>
   
