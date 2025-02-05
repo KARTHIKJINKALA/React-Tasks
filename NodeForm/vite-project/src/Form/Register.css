@@ -1,0 +1,25 @@
+.form{
+    border: 1px solid green;
+    height: 30vh;
+    text-align: center;
+    width: 30vw;
+    background: lightgrey;
+box-shadow: 0 8px 32px 0 lightseagreen;
+backdrop-filter: blur( 12.5px );
+-webkit-backdrop-filter: blur( 12.5px );
+border-radius: 10px;
+border: 1px solid lightgreen;
+    
+   
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+#username{
+    border-radius: 5%;
+}
+#password{
+    border-radius: 5%;
+}
