@@ -46,6 +46,7 @@ import  {  useMemo, useState } from 'react'
 //   )
 // }
 
+
 function ExpensiveComponent() {
     const [count, setCount] = useState(0);
   
@@ -55,8 +56,11 @@ function ExpensiveComponent() {
     };
     // console.log(expensiveCalculation(5))
   
-    const memoizedValue = useMemo(() => expensiveCalculation(5), [count]);
+    const memoizedValue = useMemo(() => 
+      expensiveCalculation(5),
+     [count]);
     console.log(memoizedValue)
+    
   
     return (
       <div>

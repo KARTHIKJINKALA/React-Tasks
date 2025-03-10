@@ -9,7 +9,7 @@ export default function Forms() {
 
     const emailRef= useRef();
     const passwordRef=useRef();
-    const rememberRef=useRef()
+    const rememberRef=useRef();
 
 
     

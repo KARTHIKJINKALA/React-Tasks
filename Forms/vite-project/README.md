@@ -2,13 +2,13 @@ Forms:
 
 There are two ways to handle forms in the react application:
 1.Uncontrolled componenets
-->In uncrotrolled componenets input state changes will bec controlled by the DOM
+->In uncrotrolled componenets input state changes will be controlled by the DOM
 ->Field validations were not possible were not possible in the Uncontrolled componenets,overall form validations were possible
 ->Maintanance will be difficult
 
 2.Controlled components
 ->In Control componentsinput state changes will be controlled by the React-itself
-->Field validations were possible were possible in the Uncontrolled componenets
+->Field validations were possible were possible in the Controlled componenets
 ->Maintanance will be easy
 
 
@@ -36,5 +36,5 @@ const ref=useRef()
 Steps to create the uncontrolled components:-
 1.Implement the form which contain JSX
 2.Create the referenecsfor inputs using useRef hook provided by the react
-3.Attach the references for the input using ref attribute guven to the inputs
+3.Attach the references for the input using ref attribute given to the inputs
 4.on submit collect user input using ref.current.value

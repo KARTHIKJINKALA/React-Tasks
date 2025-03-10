@@ -8,7 +8,7 @@ side effects:-Data fecthing,Dom manipulation,Timers,Event listeners
 useEffect is the replica of 3 methods
 1.componentDidmount
 2.compoenentDidUpdate
-3.componentWillUnmount
+3.componentWillUnmount+
 
 syntax:- useEffect will accept 2 arguments
 1.callback function
@@ -75,3 +75,5 @@ deps-what is does actually, it will only call this(create-side effects) operatio
 
 
 we pass the state or function or a event in the dependency, iut that event or function triggers then the in side the side effect will be performed.
+
+
