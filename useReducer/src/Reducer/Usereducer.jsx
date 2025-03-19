@@ -1,5 +1,10 @@
 import React, { useEffect, useReducer } from 'react'
 
+
+// Avoid defining InitialState and dataReducer inside the component because it reinitializes 
+// them on every render.
+
+
 //action types
 const Fetch_Init = "FETCH_INIT"
 const Fetch_Start = "FETCH_START"
@@ -31,7 +36,7 @@ const dataReducer = (state, action) => {
 
 export const Usereducer = () => {
     const [state, dispatch] = useReducer(dataReducer, InitialState)
-
+    
     const dataHandler=async()=>{
 try {
     dispatch({type:Fetch_Init})
